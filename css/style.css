@@ -565,7 +565,7 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/background-people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -739,7 +739,6 @@ p {
 .project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
 }
 
 /* ANIMATION */ /* ANIMATION */ /* ANIMATION */
@@ -808,7 +807,6 @@ p {
   padding: 72px 24px 24px 24px;
   border-radius: 4px;
   transition: transform var(--anim-transition);
-  
 }
 
 .modal-close-btn {
@@ -831,7 +829,9 @@ p {
   transition: background-color var(--anim-transition),
     border var(--anim-transition);
 }
-.modal-close-icon {transition: fill var(--anim-transition);}
+.modal-close-icon {
+  transition: fill var(--anim-transition);
+}
 
 .modal-close-btn:focus,
 .modal-close-btn:hover {
@@ -868,9 +868,7 @@ p {
   transform: translateY(0%);
 }
 
-
-
- .overlay {
+.overlay {
   color: var(--background-color);
   position: absolute;
   top: 0;
@@ -1120,14 +1118,15 @@ font-family: 'Roboto';
   line-height: 24px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding-left: 16px;
 }
 .subscribe-input {
   width: 264px;
   height: 40px;
   background: var(--title-text-color);
   border: 1px solid var(--secondry-white-color);
+  color: var(--secondry-white-color);
   border-radius: 4px;
+  padding-left: 16px;
 }
 .subscribe-input:focus {
   border-color: #4d5ae5;
@@ -1165,3 +1164,41 @@ font-family: 'Roboto';
 }
 
 /* Footer subscribe */
+
+/* ADAPTIVE MOBILE */ /* ADAPTIVE MOBILE */ /* ADAPTIVE MOBILE */ /* ADAPTIVE MOBILE */ /* ADAPTIVE MOBILE */
+
+
+@media screen and (max-width: 1158px) { .hero {background-image: url(../images/people-office-tablet.jpg);}}
+@media screen and (max-width: 768px) { .hero {background-image: url(../images/people-office-phone.jpg);}}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1158px),
+  screen and (min-resolution: 192dpi) and (max-width: 1158px),
+  screen and (min-resolution: 2dppx) and (max-width: 1158px) {
+  .hero {
+    background-image: url(../images/backround-people-office-2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 768px),
+  screen and (min-resolution: 192dpi) and (max-width: 768px),
+  screen and (min-resolution: 2dppx) and (max-width: 768px) {
+  .hero {
+    background-image: url(../images/hero-bg-tablet-2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 428px),
+  screen and (min-resolution: 192dpi) and (max-width: 428px),
+  screen and (min-resolution: 2dppx) and (max-width: 428px) {
+  .hero {
+    background-image: url(../images/hero-bg-2x.jpg);
+  }
+}
+
+
+/* ADAPTIVE TABLET /* ADAPTIVE TABLET*/ /* ADAPTIVE TABLET*/ /* ADAPTIVE TABLET*/ /* ADAPTIVE TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  body {
+    background-color: #31d0aa;
+  }
+}
+/* ADAPTIVE DESKTOP */ /* ADAPTIVE DESKTOP */ /* ADAPTIVE DESKTOP */ /* ADAPTIVE DESKTOP */ /* ADAPTIVE DESKTOP */
