@@ -292,7 +292,9 @@ a {
   /* padding: 120px 0;
    */
 }
-.priviliges-container { margin: 0 16px;}
+.priviliges-container {
+  margin: 0 16px;
+}
 .privilegies-title {
   font-family: "Roboto";
   font-style: normal;
@@ -312,14 +314,14 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-left: auto;margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 .privilegies-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align:center;
-  
+  text-align: center;
 }
 .privilegies-title,
 .privilegies-title-li {
@@ -332,7 +334,6 @@ a {
   align-items: center;
   justify-content: center;
   /* gap: 24px; */
-  gap: 74px;
 }
 /* .privilegies-item {
   width: calc((100% - 72px) / 4);
@@ -443,9 +444,12 @@ a {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 72px;
   list-style: none;
+  min-width: 264px;
 }
 
 .team-item {
@@ -547,7 +551,7 @@ a {
   .address-item {
     padding: 0;
   }
-}
+
 .address-link {
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -570,9 +574,12 @@ a {
 /* HERO */
 
 /* TEAM */
+
+.team-container {padding-bottom: 96px;}
 .team-list {
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 24px;
   /* max-width: 356px; */
 }
 .team-item {
@@ -580,8 +587,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-.team-img {
-  max-width: 264px;
 }
 
 /* TEAM */
